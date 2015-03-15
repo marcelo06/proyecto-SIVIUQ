@@ -48,13 +48,24 @@
 
             </div>
 
-        <!-- Banner -->
-            <section id="banner">
-                <header>
-                    <h2>Arcana: <em>A responsive site template freebie by <a href="http://html5up.net">HTML5 UP</a></em></h2>
-                    <a href="#" class="button">Learn More</a>
-                </header>
+             <!-- Gigantic Heading -->
+            <section class="wrapper style2">
+                <div class="container">
+                    <header class="major">
+                        <h2>Sistema de informacion de la vicerrectoria de investigacion</h2>
+                        <p>Universidad del Quindio</p>
+                    </header>
+                </div>
             </section>
+
+            <div class ="container">
+                <div id="slider">
+                    <div><img src="img/semilleros.jpg"></div>
+                    <div><img src="img/jovenesinv.jpg"></div>
+                    <div><img src="img/revistainv.jpg"></div>
+                </div>
+            </div>
+
 
         <!-- Highlights -->
             <section class="wrapper style1">
@@ -85,16 +96,7 @@
                 </div>
             </section>
 
-        <!-- Gigantic Heading -->
-            <section class="wrapper style2">
-                <div class="container">
-                    <header class="major">
-                        <h2>A gigantic heading you can use for whatever</h2>
-                        <p>With a much smaller subtitle hanging out just below it</p>
-                    </header>
-                </div>
-            </section>
-
+       
         <!-- Posts -->
             <section class="wrapper style1">
                 <div class="container">
@@ -224,8 +226,17 @@
                     </div>
 
             </div>
+        <script type="text/javascript">
+        $(function(){
+            $('#slider div:gt(0)').hide();
+                setInterval(function(){
+                    $('#slider div:first-child').fadeOut(5000)
+                        .next('div').fadeIn(5000)
+                        .end().appendTo('#slider');
+                },3000);
+        })
 
-
+        </script>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

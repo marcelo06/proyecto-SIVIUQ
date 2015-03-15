@@ -94,23 +94,37 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.container{
+    height: 400px;
+    width:800px;
+    margin: 20px auto;
 
+ }
 
+ #slider{
+    background-color: #000;
+    height: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    width: 800px;
 
+ }
 
+ #slider div{
 
+    height: 100%;
+    margin: 2px;
+    position: absolute;
+    width: 100%;
 
+ }
 
-
-
-
-
-
-
-
-
-
-
+ #slider div img {
+    height: 94%;
+    width: 96%;
+    margin:2px;
+ }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
